@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { Raleway } from 'next/font/google';
 import Hero from '@/components/Hero';
+import Slider from '@/components/Slider';
+import { SliderData } from '@/components/SliderData';
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
         heading="Captur Photography"
         message="I capture moments in nature and keep them alive."
       />
+      <Slider slides={SliderData} />
     </div>
   );
 }
